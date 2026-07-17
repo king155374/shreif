@@ -1,0 +1,263 @@
+body{
+    font-family: "Roboto", sans-serif;
+    /* height: 10000px; */
+}
+
+.navbar{
+    background-color: #1a1a2e;
+}
+.king{
+    font-size: 50px;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.main-btn{
+    background-color: red;
+    color: yellow;
+}
+.main-btn:hover{
+    background-color: red;
+    color: yellow;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus{
+    color: greenyellow;
+}
+
+.navbar .search{
+    border-left: 2px solid greenyellow;
+    color: greenyellow;
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+}
+
+/* project */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.king{
+    display: flex;
+    align-content: center;
+    
+}
+#check{
+    display: none;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 41px;
+    border-radius: 50px 50px 50px 50px;
+    /* background-color: white; */
+    box-shadow: 3px 0 10px  black;
+    font-size: 25px;
+}
+
+.te{
+    width: 0;
+    transition: all 0.4s ease;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 0 0 10px black;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+
+#check:checked ~ .te{
+    width: 160px;
+    padding: 20px;
+}
+
+#check:checked ~ .icon{
+    border-radius: 0 50px 50px 0;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* landing */
+.landing{
+    min-height: calc(100vh - 72px);
+    background-color: #1a1a2e;
+}
+
+/* features */
+.col{
+    color: yellowgreen;
+}
+
+.font-img::after{
+    content: '';
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    background-color: greenyellow;
+    transform: translateX(-50%);
+}
+
+/* row */
+.icon-holder{
+    height: 200px;
+}
+.icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder .numbar{
+    font-size: 12rem;
+    color: #eff7fa;
+}
+.icon-holder .ico{
+    color: greenyellow;
+}
+
+h4{
+    color: greenyellow;
+}
+
+.our-work{
+    background-color: #eff7fa; 
+}
+
+li{
+    padding: 0.5rem 1rem;
+}
+
+li.active{
+    background-color: red;
+    color: yellow;
+    border-radius: 50px;
+}
+
+li:not(.active):hover{
+    color: red;
+}
+
+.row .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.row .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #adff2f80;
+    width:  calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.row .box:hover:before{
+    transform: translateX(0);
+}
+
+.mok{
+    width: 150px;
+}
+
+/* start stuff */
+.stuff{
+    max-width: 500px;
+}
+/* end stuff */
+.team{
+    background-color: #eff7fa;
+}
+.team h4{
+    color: yellowgreen;
+}
+
+.team .boxx h4 {
+    color: white;
+    background-color: cadetblue;
+}
+
+.in .container .row .km{
+    font-size: 50px;
+}
+
+.bb{
+    background-color: #1a1a2e;
+}
+
+
+/*start supscirbe */
+
+.supscirbe{
+    background-color: yellowgreen;
+    padding: 40px;
+}
+
+.supscirbe input[type="text"] {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+.supscirbe input[type="submit"] {
+    background-color: #1a1a2e;
+    color: yellowgreen;
+}
+.supscirbe input[type="text"]:focus {
+    outline: none;
+}
+.supscirbe ::placeholder {
+    color: white;
+}
+
+
+@media (max-width:770px) {
+    .supscirbe input[type="submit"] {
+        margin-top: 20px;
+    }
+    
+    
+}
+
+/*end supscirbe */
+
+/* footer */
+
+.footerr{
+    background-color: #1a1a2e;
+    width: 100%;
+}
+
+.linkedin{
+    background-color: #0a66c2;
+}
+.youtube{
+    background-color: red;
+}
+
+.twitter{
+    background-color: #1da1f2;
+}
+
+.facebook{
+    background-color: #1877f2;
+}
